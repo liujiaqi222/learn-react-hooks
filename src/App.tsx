@@ -1,9 +1,10 @@
-import { UseReducerBasic } from "./components/UseReducer"
+import { UseReducerBasic, UseReducerExample } from "./components/UseReducer"
 function App() {
   return (
     <div className="App">
       {/* usereducer */}
       <UseReducerBasic />
+      <UseReducerExample />
     </div>
   )
 }
