@@ -1,4 +1,5 @@
-import { useReducer, useState, type SyntheticEvent } from "react"
+import { useReducer, useState } from "react"
+import type { SyntheticEvent } from "react"
 
 // #region reducer-basic
 function reducer(state: { count: number }, action: "increment" | "decrement") {
@@ -30,17 +31,6 @@ type Action =
   | { type: "addTodo"; payload: { name: string } }
   | { type: "toggleTodo" | "delete"; payload: { id: number } }
 
-function exampleReducer(state: ToDo[], action: Action) {
-  switch (action.type) {
-    case "addTodo":
-      return [...state, newTodo(action.payload.name)]
-    case "toggleTodo":
-      return toggleTodo(state, action.payload.id)
-    default:
-      return state.filter((todo) => todo.id !== action.payload.id)
-  }
-}
-
 function newTodo(name: string): ToDo {
   return { id: Date.now(), name, complete: false }
 }
@@ -53,6 +43,17 @@ function toggleTodo(todos: ToDo[], todoId: number): ToDo[] {
     }
     return todo
   })
+}
+
+function exampleReducer(state: ToDo[], action: Action) {
+  switch (action.type) {
+    case "addTodo":
+      return [...state, newTodo(action.payload.name)]
+    case "toggleTodo":
+      return toggleTodo(state, action.payload.id)
+    default:
+      return state.filter((todo) => todo.id !== action.payload.id)
+  }
 }
 
 const UseReducerExample = () => {
