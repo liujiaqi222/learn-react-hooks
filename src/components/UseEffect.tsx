@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-export const UseEffectBasic = () => {
+export const UseEffectBasic1 = () => {
   const [resourceType, setResourceType] = useState("posts")
   const [count, setCount] = useState(0)
   const [items, setItems] = useState<{ userId: number; id: number; title: string; body: string }[]>([])
