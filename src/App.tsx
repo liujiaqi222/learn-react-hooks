@@ -1,22 +1,25 @@
 import { UseReducerBasic, UseReducerExample } from "./components/UseReducer"
 import { UseEffectBasic, UseEffectBasic2 } from "./components/UseEffect"
+import { UseMemoBasic } from "./components/UseMemo"
 function App() {
   return (
     <div className="App">
       {/* usereducer */}
       <div style={{ display: "none" }}>
         <UseReducerBasic />
-      </div>
-      <div style={{ display: "none" }}>
         <UseReducerExample />
       </div>
 
       {/* useEffect */}
-      <div style={{ display: "none" }}>
-        {" "}
-        <UseEffectBasic />
-      </div>
-      <UseEffectBasic2 />
+      {false && (
+        <>
+          <UseEffectBasic />
+          <UseEffectBasic2 />
+        </>
+      )}
+
+      {/* useMemo */}
+      {false && <UseMemoBasic />}
     </div>
   )
 }
