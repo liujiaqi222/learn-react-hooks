@@ -2,6 +2,7 @@ import { UseReducerBasic, UseReducerExample } from "./components/UseReducer"
 import { UseEffectBasic1, UseEffectBasic2 } from "./components/UseEffect"
 import { UseMemoBasic } from "./components/UseMemo"
 import { UseRefBasic1, UseRefBasic2, UseRefBasic3 } from "./components/UseRef"
+import { UseContextBaisc1 } from "./components/UseContext"
 
 function App() {
   return (
@@ -24,9 +25,16 @@ function App() {
       {false && <UseMemoBasic />}
 
       {/* useRef */}
-      <UseRefBasic1 />
-      <UseRefBasic2 />
-      <UseRefBasic3 />
+      {false && (
+        <>
+          <UseRefBasic1 />
+          <UseRefBasic2 />
+          <UseRefBasic3 />
+        </>
+      )}
+
+      {/* useContext */}
+      <UseContextBaisc1 />
     </div>
   )
 }
