@@ -37,22 +37,14 @@ export const UseRefBasic1 = () => {
 export const UseRefBasic2 = () => {
   const [name, setName] = useState("")
   const inputRef = useRef<HTMLInputElement>(null)
-<<<<<<< HEAD
-  function foucs() {
-=======
   function focus() {
->>>>>>> master
     inputRef.current?.focus()
   }
   return (
     <div>
       <input ref={inputRef} type="text" onChange={(e) => setName(e.target.value)} />
       <div>my name is {name}</div>
-<<<<<<< HEAD
-      <button onClick={foucs}>Foucs</button>
-=======
       <button onClick={focus}>Focus</button>
->>>>>>> master
       <hr />
     </div>
   )
