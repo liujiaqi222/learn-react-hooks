@@ -8,8 +8,11 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+<<<<<<< HEAD
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.5",
+=======
+>>>>>>> master
     "only-allow": "^1.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -19,6 +22,11 @@
     "@babel/runtime": "7.19.4",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+<<<<<<< HEAD
+=======
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.5",
+>>>>>>> master
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "eslint": "^8.26.0",
@@ -46,4 +54,8 @@
     "not ie <= 11",
     "not op_mini all"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master

@@ -2,12 +2,13 @@ import { UseReducerBasic, UseReducerExample } from "./components/UseReducer"
 import { UseEffectBasic1, UseEffectBasic2 } from "./components/UseEffect"
 import { UseMemoBasic } from "./components/UseMemo"
 import { UseRefBasic1, UseRefBasic2, UseRefBasic3 } from "./components/UseRef"
-import { UseContextBaisc1 } from "./components/UseContext"
+import { UseContextBasic1 } from "./components/UseContext"
+import { UseState } from './components/UseState'
 
 function App() {
   return (
     <div className="App">
-      {/* usereducer */}
+      {/* useReducer */}
       <div style={{ display: "none" }}>
         <UseReducerBasic />
         <UseReducerExample />
@@ -34,7 +35,10 @@ function App() {
       )}
 
       {/* useContext */}
-      <UseContextBaisc1 />
+      {false && <UseContextBasic1 />}
+
+      {/* useState */}
+      {<UseState />}
     </div>
   )
 }

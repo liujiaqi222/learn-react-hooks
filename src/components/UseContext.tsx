@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react"
 
 const ThemeContext = createContext<string | null>(null)
-export const UseContextBaisc1 = () => {
+export const UseContextBasic1 = () => {
   const [theme, setTheme] = useState("dark")
   return (
     <>
